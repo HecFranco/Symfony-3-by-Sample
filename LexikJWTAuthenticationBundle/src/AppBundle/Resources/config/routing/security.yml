@@ -1,0 +1,12 @@
+register:
+    path: /api/signup
+    defaults: { _controller: AppBundle:Security:signup }
+    methods: POST
+
+api:
+    path: /api
+    defaults: { _controller: AppBundle:Security:api }
+
+api_login_check:
+    path: /api/login_check
+    # methods:  [POST]   
